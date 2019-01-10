@@ -22,18 +22,21 @@
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj7-Ew-l1A">
                                 <rect key="frame" x="0.0" y="271" width="375" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Zoom in on specific location"/>
+                                <connections>
+                                    <action selector="animateClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ylc-zh-1fg"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Get-yu-hbT">
                                 <rect key="frame" x="0.0" y="309" width="375" height="163"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="163" id="N4g-Go-D4Y"/>
+                                    <constraint firstAttribute="height" constant="163" id="Jka-iY-fK2"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details about your impact area that you are addressing in the sample" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gep-zX-r5s">
                                 <rect key="frame" x="0.0" y="480" width="375" height="109"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="109" id="N8G-AY-V0p"/>
+                                    <constraint firstAttribute="height" constant="109" id="t8z-8w-XfH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -42,22 +45,27 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Kj7-Ew-l1A" firstAttribute="top" secondItem="8H7-qf-4tY" secondAttribute="bottom" constant="27" id="2xx-wZ-yLZ"/>
-                            <constraint firstItem="8H7-qf-4tY" firstAttribute="leading" secondItem="Kj7-Ew-l1A" secondAttribute="leading" id="51H-3i-nAw"/>
-                            <constraint firstAttribute="trailing" secondItem="8H7-qf-4tY" secondAttribute="trailing" id="91J-Ou-ybY"/>
-                            <constraint firstItem="Gep-zX-r5s" firstAttribute="top" secondItem="Get-yu-hbT" secondAttribute="bottom" constant="8" symbolic="YES" id="Ctp-9J-LVc"/>
-                            <constraint firstItem="8H7-qf-4tY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JZ3-3F-XUj"/>
-                            <constraint firstItem="8H7-qf-4tY" firstAttribute="trailing" secondItem="Kj7-Ew-l1A" secondAttribute="trailing" id="aJ7-iO-EML"/>
-                            <constraint firstItem="Get-yu-hbT" firstAttribute="trailing" secondItem="Gep-zX-r5s" secondAttribute="trailing" id="bDo-kW-Aei"/>
-                            <constraint firstItem="Get-yu-hbT" firstAttribute="leading" secondItem="Gep-zX-r5s" secondAttribute="leading" id="cWF-HL-9GX"/>
-                            <constraint firstItem="8H7-qf-4tY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="msD-ll-rSJ"/>
-                            <constraint firstItem="Kj7-Ew-l1A" firstAttribute="leading" secondItem="Get-yu-hbT" secondAttribute="leading" id="n3S-kJ-3vc"/>
-                            <constraint firstItem="Get-yu-hbT" firstAttribute="top" secondItem="Kj7-Ew-l1A" secondAttribute="bottom" constant="8" symbolic="YES" id="p0x-W2-1yd"/>
-                            <constraint firstItem="Kj7-Ew-l1A" firstAttribute="trailing" secondItem="Get-yu-hbT" secondAttribute="trailing" id="woF-eR-EdU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gep-zX-r5s" secondAttribute="bottom" constant="78" id="yNE-tQ-Qk2"/>
+                            <constraint firstItem="Kj7-Ew-l1A" firstAttribute="leading" secondItem="Get-yu-hbT" secondAttribute="leading" id="0xM-h8-FZi"/>
+                            <constraint firstItem="Get-yu-hbT" firstAttribute="leading" secondItem="Gep-zX-r5s" secondAttribute="leading" id="Gfe-mC-4cO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gep-zX-r5s" secondAttribute="bottom" constant="78" id="LAz-ba-bdx"/>
+                            <constraint firstItem="Get-yu-hbT" firstAttribute="trailing" secondItem="Gep-zX-r5s" secondAttribute="trailing" id="UYu-bV-Ngm"/>
+                            <constraint firstItem="Get-yu-hbT" firstAttribute="top" secondItem="Kj7-Ew-l1A" secondAttribute="bottom" constant="8" symbolic="YES" id="X8t-ZK-d18"/>
+                            <constraint firstItem="8H7-qf-4tY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZGa-xU-8u0"/>
+                            <constraint firstAttribute="trailing" secondItem="8H7-qf-4tY" secondAttribute="trailing" id="f8s-Lu-C3L"/>
+                            <constraint firstItem="8H7-qf-4tY" firstAttribute="trailing" secondItem="Kj7-Ew-l1A" secondAttribute="trailing" id="ffM-sB-y9C"/>
+                            <constraint firstItem="Kj7-Ew-l1A" firstAttribute="top" secondItem="8H7-qf-4tY" secondAttribute="bottom" constant="27" id="g0a-YN-Szk"/>
+                            <constraint firstItem="8H7-qf-4tY" firstAttribute="leading" secondItem="Kj7-Ew-l1A" secondAttribute="leading" id="mk9-f3-elj"/>
+                            <constraint firstItem="Kj7-Ew-l1A" firstAttribute="trailing" secondItem="Get-yu-hbT" secondAttribute="trailing" id="mvh-Dt-E9J"/>
+                            <constraint firstItem="8H7-qf-4tY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qCZ-ap-7sh"/>
+                            <constraint firstItem="Gep-zX-r5s" firstAttribute="top" secondItem="Get-yu-hbT" secondAttribute="bottom" constant="8" symbolic="YES" id="stT-4d-cJY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="animateButton" destination="Kj7-Ew-l1A" id="gJa-RC-PEw"/>
+                        <outlet property="impactImage" destination="Get-yu-hbT" id="507-82-QD1"/>
+                        <outlet property="mapView" destination="8H7-qf-4tY" id="9In-rA-8eu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
